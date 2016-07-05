@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * s5buying_Install Class.
  */
-class s5buying_Install {
+class S5buying_Install {
 
 	/**
 	 * Hook in tabs.
@@ -121,4 +121,4 @@ INSERT INTO {$wpdb->prefix}heroes (hero_id, hero_name) VALUES
 	}
 }
 
-s5buying_Install::init();
+S5buying_Install::init();

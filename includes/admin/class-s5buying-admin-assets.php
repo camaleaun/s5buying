@@ -14,30 +14,30 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 if ( ! class_exists( 'S5buying_Admin_Assets' ) ) :
 
-/**
- * S5buying_Admin_Assets Class.
- */
-class S5buying_Admin_Assets {
-
 	/**
-	 * Hook in tabs.
+	 * S5buying_Admin_Assets Class.
 	 */
-	public function __construct() {
-		add_action( 'admin_enqueue_scripts', array( $this, 'admin_styles' ) );
+	class S5buying_Admin_Assets {
+
+		/**
+		 * Hook in tabs.
+		 */
+		public function __construct() {
+			add_action( 'admin_enqueue_scripts', array( $this, 'admin_styles' ) );
+		}
+
+		/**
+		 * Enqueue styles.
+		 */
+		public function admin_styles() {
+
+			// Register admin styles
+			wp_register_style( 's5buying_admin_menu_styles', s5buying()->plugin_url() . '/assets/css/menu.css', array(), S5BUYING_VERSION );
+
+			// Sitewide menu CSS
+			wp_enqueue_style( 's5buying_admin_menu_styles' );
+		}
 	}
-
-	/**
-	 * Enqueue styles.
-	 */
-	public function admin_styles() {
-
-		// Register admin styles
-		wp_register_style( 's5buying_admin_menu_styles', s5buying()->plugin_url() . '/assets/css/menu.css', array(), S5BUYING_VERSION );
-
-		// Sitewide menu CSS
-		wp_enqueue_style( 's5buying_admin_menu_styles' );
-	}
-}
 
 endif;
 
