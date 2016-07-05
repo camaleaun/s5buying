@@ -1,0 +1,27 @@
+// buying font icons
+
+// Import the font
+@font-face {
+  font-family: siconbuying;
+  src: url('#{$icon-font-path}siconbuying.eot');
+  src: url('#{$icon-font-path}siconbuying.eot?#iefix') format('embedded-opentype'),
+       url('#{$icon-font-path}siconbuying.woff2') format('woff2'),
+       url('#{$icon-font-path}siconbuying.woff') format('woff'),
+       url('#{$icon-font-path}siconbuying.ttf') format('truetype'),
+       url('#{$icon-font-path}siconbuying.svg#siconbuying') format('svg');
+}
+
+#adminmenu {
+  #toplevel_page_s5buying {
+    .menu-icon-generic {
+      div {
+       &.wp-menu-image {
+         &:before {
+           font-family: siconbuying;
+           content: "\e001";
+         }
+        }
+      }
+    }
+  }
+}

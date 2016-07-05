@@ -1,0 +1,18 @@
+{
+    "tabSize": 4,
+    "spaceUnits": 4,
+    "useTabChar": true,
+    "path": {
+        ".brackets.json": {
+            "useTabChar": false
+        },
+        "package.json": {
+            "useTabChar": false,
+            "spaceUnits": 2
+        },
+        "Gruntfile.js": {
+            "useTabChar": false,
+            "spaceUnits": 2
+        }
+    }
+}

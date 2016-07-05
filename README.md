@@ -1,2 +1,2 @@
 # s5buying
-Auxiliador varejista para lista de compras e histórico.
+An helper to shopping lists and history for retailers.
