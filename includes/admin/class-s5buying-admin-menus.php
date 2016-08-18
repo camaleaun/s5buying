@@ -31,7 +31,7 @@ if ( ! class_exists( 'S5buying_Admin_Menus' ) ) :
 		 * Add menu items.
 		 */
 		public function admin_menu() {
-			add_menu_page( __( 'Retail Shop', 's5buying' ), __( 'Retail Shop', 's5buying' ), 'manage_options', 's5buying', null, null, '55.5' );
+			add_menu_page( __( 'Shop', 's5buying' ), __( 'Shop', 's5buying' ), 'manage_options', 's5buying', null, null, '55.5' );
 		}
 	}
 
