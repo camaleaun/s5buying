@@ -105,8 +105,9 @@ CREATE TABLE {$wpdb->prefix}heroes (
   hero_name longtext NOT NULL,
   UNIQUE KEY hero_id (hero_id),
   PRIMARY KEY (hero_id)
-) $collate;
-INSERT INTO {$wpdb->prefix}heroes (hero_id, hero_name) VALUES
+) $collate;";
+// TODO Add initial register in heros demo table
+/*INSERT INTO {$wpdb->prefix}heroes (hero_id, hero_name) VALUES
 (11, 'Mr. Nice'),
 (12, 'Narco'),
 (13, 'Bombasto'),
@@ -116,8 +117,7 @@ INSERT INTO {$wpdb->prefix}heroes (hero_id, hero_name) VALUES
 (17, 'Dynama'),
 (18, 'Dr IQ'),
 (19, 'Magma'),
-(20, 'Tornado');
-		";
+(20, 'Tornado');*/
 	}
 }
 
